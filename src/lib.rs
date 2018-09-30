@@ -1,5 +1,4 @@
 // For tests
-#[allow(unused_imports)]
 extern crate bytes;
 
 #[macro_export]
