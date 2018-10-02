@@ -1,5 +1,4 @@
 // For tests
-#[allow(unused_imports)]
 extern crate bytes;
 
 #[macro_export]
@@ -7,7 +6,7 @@ macro_rules! templatify {
   ( $head_template:expr $(;$key:expr; $template:expr)* ) => {
     {
       let mut total_length = 0;
-      total_length = total_length + $head_template.len();
+      total_length += $head_template.len();
 
       $(
         total_length = total_length + $key.len() + $template.len();
@@ -31,7 +30,7 @@ macro_rules! templatify_buffer {
   ( $buffer:ident, $head_template:expr $(;$key:expr; $template:expr)* ) => {
     {
       let mut total_length = 0;
-      total_length = total_length + $head_template.len();
+      total_length += $head_template.len();
 
       $(
         total_length = total_length + $key.len() + $template.len();
