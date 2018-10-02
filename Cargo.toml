@@ -1,6 +1,6 @@
 [package]
 name = "templatify"
-version = "0.2.2"
+version = "0.2.3"
 authors = ["Pete Mertz <peter.s.mertz@gmail.com>"]
 description = "A fast template to string macro."
 readme = "README.md"
